@@ -48,6 +48,9 @@ gem "bootsnap", require: false
 # Simple form
 gem 'simple_form'
 
+# Consume api
+gem 'httparty'
+
 # Use Sass to process CSS
 # gem "sassc-rails"
 
