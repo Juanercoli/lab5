@@ -12,11 +12,12 @@ class PhoneValidator
             query: {
               api_key: Rails.application
                 .credentials
-                .abstractapi_api_key,
-              number: @number
+                .abstract_api_key,
+              phone: @number
             }
           })
-       
-          response["is_valid_number"] && (response["country_prefix"] == "+54")
+          
+          pp response
+          response["valid"] && (response["country"]["prefix"] == "+54")
     end
 end
